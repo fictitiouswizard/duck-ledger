@@ -44,6 +44,7 @@ model Category {
   updatedAt DateTime  @updatedAt
   deleted   Boolean   @default(false)
   name      String
+  transactions Transaction[]
 }
 
 
@@ -67,5 +68,6 @@ model Transaction {
 
   account         Account   @relation(fields: [accountId], references: [id])
   bill            Bill?     @relation(fields: [billId], references: [id])
+  category        Category?  @relation(fields: [categoryId], references: [id])
 }
 

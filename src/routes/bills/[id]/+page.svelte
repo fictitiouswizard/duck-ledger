@@ -12,7 +12,7 @@
 	}
 </script>
 
-<div>
+<div class="">
 	<form method="post" action="?/remove">
 		<button>Remove</button>
 	</form>
